@@ -546,7 +546,7 @@ h2 span{color:var(--orange)}
 /* REVEAL */
 .reveal{opacity:1;transform:none;transition:opacity .75s ease,transform .75s ease}.reveal.visible{opacity:1;transform:none}
 .stagger>*{opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease}.stagger.visible>*{opacity:1;transform:none}.stagger.visible>*:nth-child(2){transition-delay:.08s}.stagger.visible>*:nth-child(3){transition-delay:.16s}.stagger.visible>*:nth-child(4){transition-delay:.24s}.stagger.visible>*:nth-child(5){transition-delay:.32s}.stagger.visible>*:nth-child(6){transition-delay:.4s}
-@keyframes gridMove{to{background-position:0 40px}}@keyframes robotFloat{50%{transform:translate(-50%,-54%)}}@keyframes radarSpin{to{transform:rotate(360deg)}}@keyframes radarPulse{50%{transform:translate(-50%,-50%) scale(1.04);opacity:.65}}@keyframes scan{0%,100%{transform:translateX(-130px);opacity:.35}50%{transform:translateX(130px);opacity:1}}@keyframes sorsScan{0%,100%{transform:translateX(-90px);opacity:.35}50%{transform:translateX(90px);opacity:1}}@keyframes flow{to{background-position:200% 0}}
+@keyframes gridMove{to{background-position:0 40px}}@keyframes robotFloat{50%{transform:translate(-50%,-54%)}}@keyframes radarSpin{to{transform:rotate(360deg)}}@keyframes radarPulse{50%{transform:translate(-50%,-50%) scale(1.04);opacity:.65}}@keyframes scan{0%,100%{transform:translateX(-130px);opacity:.35}50%{transform:translateX(130px);opacity:1}}@keyframes sorsScan{0%,100%{transform:translateX(-90px);opacity:.35}50%{transform:translateX(90px);opacity:1}}@keyframes flow{to{background-position:200% 0}}@keyframes railwayScan{0%,100%{top:5%;opacity:.4}50%{top:90%;opacity:1}}@keyframes statusPulse{50%{transform:scale(1.35);opacity:.55}}
 
 @media(max-width:1050px){
  .hero-inner{grid-template-columns:1fr}.hero{padding:70px 0}.hero-visual{min-height:420px}.nav{gap:13px}.nav a{font-size:9px}
@@ -558,8 +558,6 @@ h2 span{color:var(--orange)}
  .hero h1{font-size:42px}.hero-visual{min-height:360px}.radar{width:290px;height:290px}
  h2{font-size:38px}.card-grid,.team-grid,.solution-board,.detection,.workflow{grid-template-columns:1fr}
  .challenge-grid{grid-template-columns:1fr}.workflow-node{min-height:250px}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:7px}
-}
-@media(max-width:700px){
  .live-strip-inner{flex-wrap:wrap;gap:10px;padding:13px 0}.live-flow{display:none}
  .fusion-board{height:600px}.fusion-node{width:115px}.fn-sors{left:5%;top:14%}.fn-facial{right:5%;top:14%}.fn-endo{display:none}.fn-thermal{left:5%;bottom:18%}.fn-multi{right:5%;bottom:18%}
  .fusion-core{top:47%}.fusion-output{bottom:20px;min-width:205px}
@@ -967,7 +965,7 @@ button,a{touch-action:manipulation}
 <div class="hero-inner">
  <div class="hero-copy-area reveal">
   <div class="kicker"><i></i> RAILWAY SECURITY • ROBOTICS • AI</div>
-  <h1>Smart Railway<br><em>Security</em> & Threat<br>Detection System</h1>
+  <h1>Smart Railway<br><em>Security</em> &amp; Threat<br>Detection System</h1>
   <p class="hero-copy">
    An intelligent inspection platform combining a quadruped robot, handheld sensing,
    SORS, thermal and multispectral sensing, edge AI and secure communication
@@ -1166,13 +1164,13 @@ button,a{touch-action:manipulation}
         <div>
           <span class="pm-kicker">SYSTEM 01 / FIELD UNIT</span>
           <h3>QUADRUPED ROBOT</h3>
-          <p>Autonomous railway inspection & edge processing</p>
+          <p>Autonomous railway inspection &amp; edge processing</p>
         </div>
         <div class="pm-status"><i></i> ONLINE</div>
       </div>
 
       <div class="pm-visual pm-robot-visual">
-        <img src="assets/images/quadruped.png" alt="AegisForge quadruped railway inspection robot" loading="lazy" onerror="this.onerror=null;this.src='assets/images/robot.png';">
+        <img src="assets/images/quadruped.png" alt="AegisForge quadruped railway inspection robot" loading="lazy">
         <div class="pm-image-overlay"></div>
         <div class="pm-corner pm-corner-a">EDGE AI<br><b>JETSON NANO</b></div>
         <div class="pm-corner pm-corner-b">NAVIGATION<br><b>LIDAR • IMU • GPS</b></div>
@@ -1201,7 +1199,7 @@ button,a{touch-action:manipulation}
         <div>
           <span class="pm-kicker">SYSTEM 02 / OPERATOR UNIT</span>
           <h3>HANDHELD DEVICE</h3>
-          <p>Portable verification, monitoring & alert interface</p>
+          <p>Portable verification, monitoring &amp; alert interface</p>
         </div>
         <div class="pm-status orange-status"><i></i> READY</div>
       </div>
@@ -1292,7 +1290,7 @@ button,a{touch-action:manipulation}
   </article>
 
   <article class="solution-card">
-   <div class="num">08 / COMPUTE & SECURITY</div>
+   <div class="num">08 / COMPUTE &amp; SECURITY</div>
    <h3>Edge AI + Satellite Communication</h3>
    <p>Jetson Nano performs local processing while the satellite communication layer supports remote data and alert transmission beyond terrestrial cellular coverage.</p>
    <div class="chips"><span>EDGE AI</span><span>SATELLITE LINK</span><span>REMOTE ALERTS</span></div>
@@ -1302,7 +1300,7 @@ button,a{touch-action:manipulation}
    <div class="num">09 / COMMUNICATION</div>
    <h3>Satellite Communication</h3>
    <p>Satellite connectivity provides the robot and handheld system with a dedicated long-range communication path for inspection data, alerts and status updates.</p>
-   <div class="chips"><span>SATELLITE UPLINK</span><span>DOWNLINK</span><span>REMOTE ALERTS</span><span>STORE & FORWARD</span></div>
+   <div class="chips"><span>SATELLITE UPLINK</span><span>DOWNLINK</span><span>REMOTE ALERTS</span><span>STORE &amp; FORWARD</span></div>
   </article>
  </div>
 </div>
